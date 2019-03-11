@@ -22,7 +22,7 @@ eureka:
     lease-renewal-interval-in-seconds: 5 # 每5秒一次，向注册中心发送心跳，服务续约(renew)的间隔，默认为30秒
     
 logging:
-  level:
+level:
     org.springframework.web: DEBUG
     #root: info
   file: /log/log/order.log
