@@ -7,9 +7,9 @@ spring:
   cloud:
     config:
       #不覆盖本地配置文件相关设置
-      allow-override: true
-      override-none: true
-      override-system-properties: false
+      allow-override: true # 标识 overrideSystemProperties属性是否启用。默认为true，设置为false意为禁止用户的设置
+      override-none: true # 外部的配置优先级更低，而且不能覆盖任何存在的属性源。默认为false
+      override-system-properties: false #用来标识外部配置是否能够覆盖系统属性，默认为true。
 
 eureka:
   client: #客户端信息
